@@ -32,9 +32,14 @@ while True:
         height = input("Height (ex. 5'7 ft or 178 cm ): ")
         if any(unit in height for unit in ["'", "cm", "ft", "m"]):
             break
-        print("Error: Please specify a valid height (ex. 5'6 ft, 167 cm, or 1.7 m).")
+        print("Error: Please input a valid height (ex. 5'6 ft, 167 cm, or 1.7 m).")
 
-    weight = input("Weight: ")
+    while True:
+        weight = input("Weight (ex. 75 kg or 150 lbs): ")
+        if any(unit in weight for unit in ["kg", "lbs"]):
+            break
+        print("Error: Please input a valid weight with units (ex. 70 kg or 154 lbs).")
+
     nationality = input("Nationality: ")
     music_genre = input("Music genre: ")
     hobby = input("Hobby: ")
