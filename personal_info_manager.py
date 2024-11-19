@@ -11,4 +11,17 @@ nationality = input("Nationality: ")
 music_genre = input("Music genre: ")
 hobby = input("Hobby: ")
 
-info = open("personal_info.txt", "a")
+info = (
+    f"Full Name: {full_name}/n"
+    f"Age: {age}/n"
+    f"Address: {address}/n"
+    f"Birthday: {birthday}/n"
+    f"Height: {height}/n"
+    f"Weight: {weight}/n"
+    f"Nationality: {nationality}/n"
+    f"Music genre: {music_genre}/n"
+    f"Hobby: {hobby}/n/n"
+)
+
+with open("personal_info.txt", "a") as info_file:
+    info_file.write(info)
