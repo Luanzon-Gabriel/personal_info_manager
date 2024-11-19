@@ -9,3 +9,33 @@ Nationality: pipino
 Music genre: rock
 Hobby: nothing
 
+Full Name: kobe
+Age: 34
+Address: brgy tibay
+Birthday: 09/21/98
+Height: 5'3
+Weight: 67kgs
+Nationality: Russian
+Music genre: Pop
+Hobby: Sleep
+
+Full Name: kobe
+Age: 21
+Address: kop
+Birthday: 34/42
+Height: 43
+Weight: 232
+Nationality: pinoy
+Music genre: toy
+Hobby: nap
+
+Full Name: kove
+Age: 23
+Address: rg
+Birthday: 23
+Height: f
+Weight: f
+Nationality: f
+Music genre: f
+Hobby: f
+
