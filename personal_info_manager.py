@@ -23,7 +23,13 @@ while True:
             print("Error: Age must be a valid number.")
 
     address = input("Address: ")
-    birthday = input("Birthday: ")
+    
+    while True:
+        birthday = input("Birthday (MM-DD-YYYY): ")
+        if len(birthday) == 10 and birthday[4] == "-" and birthday[7] == "-":
+            break
+        print("Error: Enter birthday in the format MM-DD-YYYY.")
+
     height = input("Height: ")
     weight = input("Weight: ")
     nationality = input("Nationality: ")
