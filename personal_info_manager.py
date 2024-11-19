@@ -8,8 +8,20 @@ while True:
             break 
         else:
             print("Error: Name must be a full name containing at least two words, with alphabetic characters, spaces, apostrophes, period, or hyphens.")
-  
-    age = int(input("Age: "))
+
+    while True:
+        try:
+            age = int(input("Age: "))
+
+            if 0 <= age <= 120:
+                break 
+
+            else:
+                print("Error: Age must be a number between 0 and 120.")
+
+        except ValueError:
+            print("Error: Age must be a valid number.")
+
     address = input("Address: ")
     birthday = input("Birthday: ")
     height = input("Height: ")
