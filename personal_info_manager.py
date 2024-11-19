@@ -2,7 +2,13 @@
 
 while True:
     print("Enter Personal Information")
-    full_name = input("Full name: ")
+    while True:
+        full_name = input("Full name: ")
+        if len(full_name.split()) >= 2 and all(char.isalpha() or char in [" ", "'", "-", "."] for char in full_name):
+            break 
+        else:
+            print("Error: Name must be a full name containing at least two words, with alphabetic characters, spaces, apostrophes, period, or hyphens.")
+  
     age = int(input("Age: "))
     address = input("Address: ")
     birthday = input("Birthday: ")
