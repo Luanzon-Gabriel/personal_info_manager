@@ -12,10 +12,8 @@ while True:
     while True:
         try:
             age = int(input("Age: "))
-
             if 0 <= age <= 120:
                 break 
-
             else:
                 print("Error: Age must be a number between 0 and 120.")
 
@@ -23,14 +21,19 @@ while True:
             print("Error: Age must be a valid number.")
 
     address = input("Address: ")
-    
+
     while True:
         birthday = input("Birthday (MM-DD-YYYY): ")
-        if len(birthday) == 10 and birthday[4] == "-" and birthday[7] == "-":
+        if len(birthday) == 10:
             break
         print("Error: Enter birthday in the format MM-DD-YYYY.")
 
-    height = input("Height: ")
+    while True:
+        height = input("Height (ex. 5'7 ft or 178 cm ): ")
+        if any(unit in height for unit in ["'", "cm", "ft", "m"]):
+            break
+        print("Error: Please specify a valid height (ex. 5'6 ft, 167 cm, or 1.7 m).")
+
     weight = input("Weight: ")
     nationality = input("Nationality: ")
     music_genre = input("Music genre: ")
