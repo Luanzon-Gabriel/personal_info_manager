@@ -20,3 +20,5 @@ for line in lines:
 if found:
     print("Information found: ")
     print(info)
+else:
+    print(f"No inforation found for {search_full_name}")
